@@ -25,7 +25,7 @@ public class ReminderAlarmReceiver extends BroadcastReceiver {
 
         // Create a notification
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "reminder_channel")
-                .setSmallIcon(R.drawable.ic_notification_ico)
+                .setSmallIcon(R.drawable.ic_arrow_back)
                 .setContentTitle(title)
                 .setContentText(text)
                 .setPriority(NotificationCompat.PRIORITY_HIGH);

@@ -6,12 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/title_txt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="casual"
-        android:text="Reminders"
+        android:text="@string/reminders"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,8 +35,11 @@
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_add_reminder"
         app:layout_constraintTop_toBottomOf="@id/title_txt"
-        app:layout_constraintBottom_toTopOf="@id/btn_add_reminder">
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_margin="8dp">
 
         <LinearLayout
             android:id="@+id/linearLayout"
@@ -54,9 +59,9 @@
         android:layout_height="wrap_content"
         android:text="No reminders"
         android:textSize="36sp"
-        app:layout_constraintTop_toBottomOf="@id/title_txt"
         app:layout_constraintBottom_toTopOf="@id/btn_add_reminder"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/title_txt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

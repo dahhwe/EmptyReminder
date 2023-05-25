@@ -14,5 +14,6 @@ public final class ReminderContract {
         public static final String COLUMN_NAME_YEAR = "year";
         public static final String COLUMN_NAME_HOUR = "hour";
         public static final String COLUMN_NAME_MINUTE = "minute";
+        public static final String COLUMN_NAME_COMPLETED = "completed"; // add new constant for completed column
     }
 }

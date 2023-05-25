@@ -19,6 +19,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
 
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/linearLayout"
             android:layout_width="match_parent"
@@ -48,22 +49,11 @@
                 android:id="@+id/date_new_reminder"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="33dp"
-                android:layout_marginTop="14dp"
-                android:layout_marginBottom="8dp"
+                android:layout_marginTop="838dp"
+                android:layout_marginBottom="14dp"
                 app:layout_constraintBottom_toTopOf="@+id/btn_submit_reminders_info"
-                app:layout_constraintStart_toStartOf="@+id/btn_submit_reminders_info"
-                app:layout_constraintTop_toBottomOf="@+id/time_new_reminder" />
-
-            <Button
-                android:id="@+id/btn_submit_reminders_info"
-                android:layout_width="417dp"
-                android:layout_height="80dp"
-                android:layout_marginTop="1284dp"
-                android:onClick="onClick"
-                android:text="Submit"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.491"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -75,8 +65,9 @@
                 android:layout_marginTop="116dp"
                 android:layout_marginEnd="9dp"
                 android:layout_marginBottom="8dp"
+                android:autofillHints="Go back"
                 android:ems="10"
-                android:hint="Title"
+                android:hint="@string/title"
                 android:inputType="text"
                 app:layout_constraintBottom_toTopOf="@+id/txt_new_reminder_info"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -97,6 +88,42 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_submit_reminders_info"
+                android:layout_width="258dp"
+                android:layout_height="41dp"
+                android:onClick="onClick"
+                android:text="Submit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_add_reminder_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Create new reminder"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@+id/txt_new_reminder_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="28dp"
+                android:backgroundTint="#00000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_arrow_back_small" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
